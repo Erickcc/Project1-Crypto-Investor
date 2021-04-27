@@ -22,14 +22,17 @@ var newsUrl = 'https://newsapi.org/v2/everything?' +
     'sortBy=relevancy&' +
     'apiKey=c291ba41b0364ba5a0476ff14be9cef8';
 
-function getCryptoInfo() {
+function getCryptoInfo(event) {
+    event.preventDefault();
     var cryptoName = $('#form-element').val();
     cryptoName = cryptoName.toLowerCase();
     fetchCryptoInfo(cryptoName);
 }
 
 
-function test(){
+function test(event){
+    event.preventDefault();
+
     console.log("Clicked");
     console.log($('#form-element').val());
 }

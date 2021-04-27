@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css" integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
+
+    
     <title>Practice Foundation</title>
 </head>
 <body>
@@ -23,20 +25,15 @@
                    
                       <h3 style="text-align: center;">Select a Cryptocurency</h3>
                    
-                    <select style="font-size: 1.5rem;">
+                    <select style="font-size: 1.5rem;" id="form-element">
                       <option value="Bitcoin">Bitcoin</option>
                       <option value="Ethereum">Ethereum</option>
                       <option value="Cardano">Dogecoin</option>
                       <option value="Litecoin">Litecoin</option>
                     </select>
 
-                    <button class="simple button float-right" type="submit">Search</button>
+                    <button class="simple button float-right" type="submit" id="input-button">Search</button>
 
-                         <!--
-                           <p>
-                              <a href="#" class="simple button float-right" style="size:5rem;">Search</a><br>
-                          </p>
-                        --> 
                   </div>
                 </div>
           </form>
@@ -94,8 +91,10 @@
       <div style="width:100%; text-align: center;">Bootcamp Proyect 1</div>
   </Footer>
 
-
-
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="assets/js/fetchCryptoInfo.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 </html>
