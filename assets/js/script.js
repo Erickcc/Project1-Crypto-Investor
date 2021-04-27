@@ -14,14 +14,6 @@
 //Key: c291ba41b0364ba5a0476ff14be9cef8
 var buttonEl = document.querySelector('#input-button');
 
-
-var newsUrl = 'https://newsapi.org/v2/everything?' +
-    'q=+dogecoin&' +
-    'from=2021-04-01&' +
-    'language=en&' +
-    'sortBy=relevancy&' +
-    'apiKey=c291ba41b0364ba5a0476ff14be9cef8';
-
 function getCryptoInfo(event) {
     event.preventDefault();
     var cryptoName = $('#form-element').val();

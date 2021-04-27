@@ -36,6 +36,7 @@ function fetchCryptoInfo(cryptoName){
             marketCap: locRes.market_data.market_cap.usd,
         };
         console.log(cryptoInfo);
+        fetchNews(cryptoName);
     })
     .catch(function (error) {
         console.error(error);
