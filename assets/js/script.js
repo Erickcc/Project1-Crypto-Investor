@@ -12,6 +12,8 @@
 
 //NewsAPI
 //Key: c291ba41b0364ba5a0476ff14be9cef8
+var buttonEl = document.querySelector('#input-button');
+
 
 var newsUrl = 'https://newsapi.org/v2/everything?' +
     'q=+dogecoin&' +
@@ -21,10 +23,21 @@ var newsUrl = 'https://newsapi.org/v2/everything?' +
     'apiKey=c291ba41b0364ba5a0476ff14be9cef8';
 
 function getCryptoInfo() {
-    var cryptoName = "bitcoin";
+    var cryptoName = $('#form-element').val();
+    cryptoName = cryptoName.toLowerCase();
     fetchCryptoInfo(cryptoName);
 }
 
-getCryptoInfo();
+
+function test(){
+    console.log("Clicked");
+    console.log($('#form-element').val());
+}
+
+//  $("#input-button").click(test);
+$("#input-button").click(getCryptoInfo);
+
+// buttonEl.addEventListener('click', getCryptoInfo);
+
 
 

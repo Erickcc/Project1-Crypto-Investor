@@ -1,99 +1,105 @@
-
 <!doctype html>
 <html class="no-js" lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Foundation for Sites</title>
-    <link rel="stylesheet" href="assets/css/foundation.css">
-  </head>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foundation for Sites</title>
+  <link rel="stylesheet" href="assets/css/foundation.css">
+</head>
+
 <body>
 
-    <!-- Simple header that gets style on the CSS file -->
-    <header class="top-bar" style="align-content: center;">
-        <h3 style="width:100%; text-align: center;">Crypto App</h3>
-    </header>
+  <!-- Simple header that gets style on the CSS file -->
+  <header class="top-bar" style="align-content: center;">
+    <h3 style="width:100%; text-align: center;">Crypto App</h3>
+  </header>
 
-    <div class="grid-x grid-padding-x" style="background: burlywood;">
+  <div class="grid-x grid-padding-x" style="background: burlywood;">
     <!-- Left hand side of the page (Around 4/12 of the screen) -->
-        <div class="lhs large-4 medium 4 cell">
-            <form>
-                <div class="grid-x grid-padding-x">
-                    <div class="large-12 cell">
-                      <label>Select a Cryptocurency:</label>
-                      <select>
-                        <option value="Bitcoin">Bitcoin</option>
-                        <option value="Ethereum">Ethereum</option>
-                        <option value="Cardano">Dogecoin</option>
-                        <option value="Litecoin">Litecoin</option>
-                      </select>
-                            <p>
-                                <a href="#" class="secondary button float-right">Input</a><br>
-                            </p>
-                    </div>
-                  </div>
-            </form>
+    <div class="lhs large-4 medium 4 cell">
+      <form>
+        <div class="grid-x grid-padding-x">
+          <div class="large-12 cell" >
+            <label>Select a Cryptocurency:</label>
+            <select id="form-element">
+              <option value="Bitcoin">Bitcoin</option>
+              <option value="Ethereum">Ethereum</option>
+              <option value="Cardano">Dogecoin</option>
+              <option value="Litecoin">Litecoin</option>
+            </select>
+            <p>
+              <button class="secondary button float-right" type="button" id="input-button">Input</button>
+            </p>
+          </div>
         </div>
-        
-        <!-- Right hand side of the page (Around 8/12 of the screen) -->
-        <div class="rhs large-8 medium-8 cell" style="background: lightblue;">
-            <div class="callout" style="background: yellow;">
-                
-                <!-- Row with name of cryptocurrency-->
-                <div class="grid-x grid-margin-x" style="background: grey">
-                    <div class="large-12 medium-12 cell" style="background: whitesmoke;">
-                        <h4>Name of Cryptocurency</h4>
-                    </div>
-                </div>
-
-                <!-- Row with information about crypto and graph-->
-                <div class="grid-x grid-margin-x" style="background: red">
-                  <div class="large-12 medium-12 cell" style="background: violet;">
-                    <p><a href="http://foundation.zurb.com/docs">Area for Information</a>
-                        <ul>
-                            <li>Current Price:<span></span></li>
-                            <li>Performance 7 days:<span></span></li>
-                            <li>Performance 14 days:<span></span></li>
-                            <li>Performance 21 days:<span></span></li>
-                        </ul>
-                    </p>
-                  </div>
-
-                <!-- Row with four cards-->
-                  <div class="card-section large-3 medium-3 cell" style="background: white;">
-                    <img src="assets/img/generic/rectangle-1.jpg">
-                    <p><span Style="color:blue">News Article 1</span><br>These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-                  </div>
-                  <div class="card-section large-3 medium-3 cell" style="background: grey;">
-                    <img src="assets/img/generic/rectangle-1.jpg">
-                    <p><span Style="color:blue">News Article 2</span><br>These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-                  </div>
-                  <div class="card-section large-3 medium-3 cell" style="background: wheat;">
-                    <img src="assets/img/generic/rectangle-1.jpg">
-                    <p><span Style="color:blue">News Article 3</span><br>These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-                  </div>
-                  <div class="card-section large-3 medium-3 cell" style="background: yellowgreen;">
-                    <img src="assets/img/generic/rectangle-1.jpg">
-                    <p><span Style="color:blue">News Article 4</span><br>These online courses offer you a chance to better understand how Foundation works and how you can master it to create awesome projects.</p>
-                  </div>
-
-                  </div>
-                </div>
-            </div>
-        </div>
+      </form>
     </div>
 
-    <Footer class="top-bar">
-        <div style="width:100%; text-align: center;">Bootcamp Proyect 1</div>
-    </Footer>
+    <!-- Right hand side of the page (Around 8/12 of the screen) -->
+    <div class="rhs large-8 medium-8 cell" style="background: lightblue;">
+      <div class="callout" style="background: yellow;">
+
+        <!-- Row with name of cryptocurrency-->
+        <div class="grid-x grid-margin-x" style="background: grey">
+          <div class="large-12 medium-12 cell" style="background: whitesmoke;">
+            <h4>Name of Cryptocurency</h4>
+          </div>
+        </div>
+
+        <!-- Row with information about crypto and graph-->
+        <div class="grid-x grid-margin-x" style="background: red">
+          <div class="large-12 medium-12 cell" style="background: violet;">
+            <p><a href="http://foundation.zurb.com/docs">Area for Information</a>
+            <ul>
+              <li>Current Price:<span></span></li>
+              <li>Performance 7 days:<span></span></li>
+              <li>Performance 14 days:<span></span></li>
+              <li>Performance 21 days:<span></span></li>
+            </ul>
+            </p>
+          </div>
+
+          <!-- Row with four cards-->
+          <div class="card-section large-3 medium-3 cell" style="background: white;">
+            <img src="assets/img/generic/rectangle-1.jpg">
+            <p><span Style="color:blue">News Article 1</span><br>These online courses offer you a chance to better
+              understand how Foundation works and how you can master it to create awesome projects.</p>
+          </div>
+          <div class="card-section large-3 medium-3 cell" style="background: grey;">
+            <img src="assets/img/generic/rectangle-1.jpg">
+            <p><span Style="color:blue">News Article 2</span><br>These online courses offer you a chance to better
+              understand how Foundation works and how you can master it to create awesome projects.</p>
+          </div>
+          <div class="card-section large-3 medium-3 cell" style="background: wheat;">
+            <img src="assets/img/generic/rectangle-1.jpg">
+            <p><span Style="color:blue">News Article 3</span><br>These online courses offer you a chance to better
+              understand how Foundation works and how you can master it to create awesome projects.</p>
+          </div>
+          <div class="card-section large-3 medium-3 cell" style="background: yellowgreen;">
+            <img src="assets/img/generic/rectangle-1.jpg">
+            <p><span Style="color:blue">News Article 4</span><br>These online courses offer you a chance to better
+              understand how Foundation works and how you can master it to create awesome projects.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <Footer class="top-bar">
+    <div style="width:100%; text-align: center;">Bootcamp Proyect 1</div>
+  </Footer>
 
 
 
 
-<script src="assets/js/vendor.js"></script>
-<script src="assets/js/foundation.js"></script>
-<script src="assets/js/fetchCryptoInfo.js"></script>
-<script src="assets/js/script.js"></script>
+  <script src="assets/js/vendor.js"></script>
+  <script src="assets/js/foundation.js"></script>
+  <script src="assets/js/fetchCryptoInfo.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
+
 </html>

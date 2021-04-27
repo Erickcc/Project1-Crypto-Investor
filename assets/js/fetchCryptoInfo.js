@@ -9,8 +9,8 @@ Values to retrieve:
 function fetchCryptoInfo(cryptoName){
     var cryptoUrl = 'https://api.coingecko.com/api/v3/coins/' +
     cryptoName +
-    '?localization=false' +
-    '&tickers=true&' +
+    '?localization=false&' +
+    'tickers=true&' +
     'market_data=true&' +
     'community_data=true&' +
     'developer_data=true&' +
