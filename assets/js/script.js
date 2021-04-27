@@ -12,17 +12,19 @@
 
 //NewsAPI
 //Key: c291ba41b0364ba5a0476ff14be9cef8
-var buttonEl = document.querySelector('#input-button');
+// var buttonEl = document.querySelector('#input-button');
 
 function getCryptoInfo(event) {
     event.preventDefault();
     var cryptoName = $('#form-element').val();
     cryptoName = cryptoName.toLowerCase();
+    console.log(cryptoName);
     fetchCryptoInfo(cryptoName);
+    fetchNews(cryptoName);
 }
 
 
-function test(event){
+function test(event) {
     event.preventDefault();
 
     console.log("Clicked");

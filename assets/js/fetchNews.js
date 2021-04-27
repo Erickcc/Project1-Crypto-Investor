@@ -2,21 +2,29 @@
 //https://gnews.io/api/v4/search?q=example&token=10250ea8aa62ea37de00eb8a2370479d
 //token: 10250ea8aa62ea37de00eb8a2370479d
 
-var token = "10250ea8aa62ea37de00eb8a2370479d" ;
+/*
+Values to retrieve:
+-Title (title)
+-Description (description)
+-Image (image)
+-URL (url)
+*/
+
+var token = "10250ea8aa62ea37de00eb8a2370479d";
 
 
 function fetchNews(cryptoName) {
     var newsUrl = 'https://gnews.io/api/v4/search?q=' +
         cryptoName + '&' +
-        'from=2021-04-20&' +
+        'from=2021-04-15&' +
         'lang=en&' +
         'in=title&' +
         'sortBy=relevance&' +
         'country=us&' +
         'token=' + token;
-        
+
     var cryptoNews = [];
-    // console.log(newsUrl);
+    console.log(newsUrl);
     fetch(newsUrl)
         .then(function (response) {
             if (!response.ok) {
@@ -39,6 +47,8 @@ function fetchNews(cryptoName) {
                 });
             }
             console.log(cryptoNews);
+            renderCryptoNews(cryptoNews);
+
         })
         .catch(function (error) {
             console.error(error);
