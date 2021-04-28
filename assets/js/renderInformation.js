@@ -30,6 +30,6 @@ function renderCryptoNews(cryptoNews){
         $('#newsTitle' + (i+1)).text(cryptoNews[i].title);
         $("#newsContent" + (i+1)).text(cryptoNews[i].description);
         $("#newImage" + (i+1)).prepend('<img src="' + cryptoNews[i].image + '" class="removable" style="height:100px" >');
-        $("#newImage" + (i+1)).append('<a href="' + cryptoNews[i].url + '" class="removable" target="_blank">Link a la noticia</a>');
+        $("#newImage" + (i+1)).append('<a href="' + cryptoNews[i].url + '" class="removable" target="_blank">Link to the news</a>');
     }
 }
