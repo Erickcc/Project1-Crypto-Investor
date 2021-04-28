@@ -21,6 +21,7 @@ function getCryptoInfo(event) {
     console.log(cryptoName);
     fetchCryptoInfo(cryptoName);
     fetchNews(cryptoName);
+    fetchTableData(cryptoName);
 }
 
 
