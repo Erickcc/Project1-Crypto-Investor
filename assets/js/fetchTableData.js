@@ -54,7 +54,7 @@ function fetchTableData(cryptoName) {
                     });
                 }
             }
-            renderChart(cryptoValues);
+            renderChart(cryptoValues, cryptoName);
             // console.log(locRes);
             // console.log(cryptoValues);
         })

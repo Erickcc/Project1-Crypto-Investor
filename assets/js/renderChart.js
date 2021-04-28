@@ -1,4 +1,6 @@
-function renderChart(cryptoValues) {
+// https://jscharting.com/
+// Code borrowed from the librart's gallery : https://jscharting.com/examples/chart-types/line/
+function renderChart(cryptoValues, cryptoName) {
     var chart = JSC.chart('chartDiv', {
         debug: true,
         type: 'line',
@@ -15,10 +17,10 @@ function renderChart(cryptoValues) {
                 }
             }
         },
-        xAxis: { scale_type: 'time' },
+        xAxis: { scale_type: 'Date' },
         series: [
             {
-                name: 'Purchases',
+                name: cryptoName,
                 points: [
                     [cryptoValues[0].date, cryptoValues[0].price],
                     [cryptoValues[1].date, cryptoValues[1].price],
