@@ -9,24 +9,24 @@
     integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I=" crossorigin="anonymous">
 
 
-  <title>Practice Foundation</title>
+  <title>Crypto App</title>
 </head>
 
 <body>
 
   <!-- Simple header that gets style on the CSS file -->
-  <header class="top-bar" style="align-content: center; background: rgb(35, 33, 158);">
-    <h1 style="width:100%; text-align: center; color: white; font-size: 4rem;">Crypto App</h1>
+  <header class="top-bar" style="align-content: center; background:#34568B">
+    <h1 style="width:100%; text-align: center; color: white; font-size: 3rem;"> <strong>Crypto Web App</strong> </h1>
   </header>
 
   <div class="grid-x grid-padding-x" style="background: white">
     <!-- Left hand side of the page (Around 4/12 of the screen) -->
     <div class="lhs large-4 medium 4 cell">
-      <form>
+      <form style="margin-top: 1.4rem;">
         <div class="grid-x grid-padding-x">
           <div class="large-12 cell">
 
-            <h3 style="text-align: center;">Select a Cryptocurency</h3>
+            <h3 style="text-align: center; font-size: 2rem;"> <strong>Select a Cryptocurrency</strong></h3>
 
             <select style="font-size: 1.5rem;" id="form-element">
               <option value="Bitcoin">Bitcoin</option>
@@ -35,7 +35,7 @@
               <option value="Litecoin">Litecoin</option>
             </select>
 
-            <button class="simple button float-right" type="submit" id="input-button">Search</button>
+            <button class="float-right button large button secondary" type="submit" id="input-button">Search</button>
 
           </div>
         </div>
@@ -43,52 +43,52 @@
     </div>
 
     <!-- Right hand side of the page (Around 8/12 of the screen) -->
-    <div class="rhs large-8 medium-8 cell" style="background: lightblue;">
-      <div class="callout" style="background: yellow;">
+    <div class="rhs large-8 medium-8 cell" style="background:white;">
+      <div class="callout" style="background: white;">
 
         <!-- Row with name of cryptocurrency-->
-        <div class="grid-x grid-margin-x" style="background: grey">
-          <div class="large-12 medium-12 cell" style="background: whitesmoke;">
-            <h4 id="nameCrypto">Name of Cryptocurency</h4>
+        <div class="grid-x grid-margin-x" style="background:#34568B">
+          <div class="large-12 medium-12 cell" style="background: #34568B">
+            <h3 id="nameCrypto" style="color:white; font-size: 2.5rem; margin-left: 1.2rem;">Cryptocurrency</h3>
           </div>
         </div>
 
         <!-- Row with information about crypto and graph-->
-        <div class="grid-x grid-margin-x" style="background: red">
-          <div class="large-12 medium-12 cell" style="background: violet;">
+        <div class="grid-x grid-margin-x" style="background:white">
+          <div class="large-12 medium-12 cell callout secondary" style="">
             <ul style="font-size: 1.5rem;" class="no-bullet">
-              <li id="currentPrice">Current Price:<span></span></li>
-              <li id="allTimeHigh">All Time High:<span></span></li>
-              <li id="marketCap">Market Cap:<span></span></li>
+              <li id="currentPrice" style="font-weight: bold">Current Price:<span></span></li>
+              <li id="allTimeHigh" style="font-weight: bold">All Time High:<span></span></li>
+              <li id="marketCap" style="font-weight: bold">Market Cap:<span></span></li>
             </ul>
           </div>
 
           <!-- Row with four cards-->
-          <div class="card-section large-3 medium-3 cell text-center" id="newImage1" style="background: white;">
+          <div class="card-section large-3 medium-3 cell text-center callout primary" id="newImage1">
             <!-- <img src="https://via.placeholder.com/150" id="newImage1"> -->
-            <p><span style="color:blue" id="newsTitle1"></span><br>
+            <p style="font-weight: bold; margin-top: 1.5rem;"><span style="color:#363945" id="newsTitle1"></span><br>
             <p id="newsContent1"></p>
             </p>
             <!-- <a href="">Link a la noticia</a> -->
           </div>
-          <div class="card-section large-3 medium-3 cell text-center" id="newImage2" style="background: grey;">
+          <div class="card-section large-3 medium-3 cell text-center callout primary" id="newImage2">
             <!-- <img src="https://via.placeholder.com/150" id="newImage2"> -->
-            <p><span Style="color:blue" id="newsTitle2"></span><br>
+            <p style="font-weight: bold; margin-top: 1.5rem;"><span Style="color:#363945" id="newsTitle2"></span><br>
             <p id="newsContent2"></p>
             </p>
             <!-- <a href="">Link a la noticia</a> -->
           </div>
-          <div class="card-section large-3 medium-3 cell text-center" id="newImage3" style="background: wheat;">
+          <div class="card-section large-3 medium-3 cell text-center callout primary" id="newImage3">
             <!-- <img src="https://via.placeholder.com/150" id="newImage3"> -->
-            <p><span style="color:blue" id="newsTitle3"></span><br>
+            <p style="font-weight: bold; margin-top: 1.5rem;"><span style="color:#363945" id="newsTitle3"></span><br>
             <p id="newsContent3"></p>
             </p>
             <!-- <a href="">Link a la noticia</a> -->
           </div>
-          <div class="card-section large-3 medium-3 cell text-center" id="newImage4" style="background: yellowgreen;">
+          <div class="card-section large-3 medium-3 cell text-center callout primary" id="newImage4">
             <!-- <img src="https://via.placeholder.com/150" id="newImage4"> -->
-            <p><span Style="color:blue" id="newsTitle4"></span><br>
-            <p id="newsContent4"></p>
+            <p style="font-weight: bold; margin-top: 1.5rem;"><span Style="color:#363945" id="newsTitle4"></span><br>
+            <p id="newsContent4" style="font-style;: italic"></p>
             </p>
             <!-- <a href="">Link a la noticia</a> -->
           </div>
@@ -99,8 +99,8 @@
   </div>
   </div>
 
-  <Footer class="top-bar">
-    <div style="width:100%; text-align: center;">Bootcamp Proyect 1</div>
+  <Footer class="top-bar" style=" background: #34568B">
+    <div style="width: 100%; text-align: center; color: white; font-family: helvetica;">Designed by: Erick Contreras, Joaquin Burgos & Luis Cruz</div>
   </Footer>
 
 
