@@ -7,6 +7,7 @@ Values to retrieve:
 */
 
 function fetchCryptoInfo(cryptoName) {
+    // Build the URL to retrieve the crypto coin market information
     var cryptoUrl = 'https://api.coingecko.com/api/v3/coins/' +
         cryptoName +
         '?localization=false&' +
@@ -15,6 +16,7 @@ function fetchCryptoInfo(cryptoName) {
         'community_data=true&' +
         'developer_data=true&' +
         'sparkline=true';
+    // Object that we are going to use to store the crypto market information
     var cryptoInfo;
 
     fetch(cryptoUrl)
@@ -25,17 +27,17 @@ function fetchCryptoInfo(cryptoName) {
             return response.json();
         })
         .then(function (locRes) {
-            // console.log("Name: " + locRes.name);
-            // console.log("Current Price: " + locRes.market_data.current_price.usd);
-            // console.log("All time high: " + locRes.market_data.ath.usd);
-            // console.log("Market Cap: " + locRes.market_data.market_cap.usd);
+            /*
+            Retrieve the crypto name, current price, all time high value and market cap and
+            Store it in the crypto infor variable
+            */
             cryptoInfo = {
                 name: locRes.name,
                 currentPrice: locRes.market_data.current_price.usd,
                 allTimeHigh: locRes.market_data.ath.usd,
                 marketCap: locRes.market_data.market_cap.usd,
             };
-            console.log(cryptoInfo);
+            // Once the information was retrieved, then use the next function to display it
             renderCryptoInfo(cryptoInfo);
         })
         .catch(function (error) {

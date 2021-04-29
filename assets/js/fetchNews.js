@@ -10,10 +10,12 @@ Values to retrieve:
 -URL (url)
 */
 
+// API token/key
 var token = "10250ea8aa62ea37de00eb8a2370479d";
 
 
 function fetchNews(cryptoName) {
+    // Build API URL
     var newsUrl = 'https://gnews.io/api/v4/search?q=' +
         cryptoName + '&' +
         'from=2021-04-15&' +
@@ -22,9 +24,9 @@ function fetchNews(cryptoName) {
         'sortBy=relevance&' +
         'country=us&' +
         'token=' + token;
-
+    // Create an array of objetcs that will be used to store the retrieved information from the API
     var cryptoNews = [];
-    console.log(newsUrl);
+    
     fetch(newsUrl)
         .then(function (response) {
             if (!response.ok) {
@@ -33,12 +35,9 @@ function fetchNews(cryptoName) {
             return response.json();
         })
         .then(function (locRes) {
-            // console.log("Name: " + locRes.name);
-            // console.log("Current Price: " + locRes.market_data.current_price.usd);
-            // console.log("All time high: " + locRes.market_data.ath.usd);
-            // console.log("Market Cap: " + locRes.market_data.market_cap.usd);
-            // console.log(locRes);
+            // Loop through the first 4 news retrieved from the API
             for (var i = 0; i < 4; i++) {
+                // Store the current news article information (title, description, image and url)
                 cryptoNews.push({
                     title: locRes.articles[i].title,
                     description: locRes.articles[i].description,
@@ -46,7 +45,7 @@ function fetchNews(cryptoName) {
                     url: locRes.articles[i].url,
                 });
             }
-            console.log(cryptoNews);
+            // Display the retrieved information
             renderCryptoNews(cryptoNews);
 
         })

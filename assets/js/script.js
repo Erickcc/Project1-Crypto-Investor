@@ -12,30 +12,25 @@
 
 //NewsAPI
 //Key: c291ba41b0364ba5a0476ff14be9cef8
-// var buttonEl = document.querySelector('#input-button');
+
 
 function getCryptoInfo(event) {
     event.preventDefault();
+    // Extracts the current value of the drop down menu
     var cryptoName = $('#form-element').val();
+    // Turns the name to lowercase so that we can later feed that name to the API
     cryptoName = cryptoName.toLowerCase();
-    console.log(cryptoName);
+    // Function that gets the main market information of the chosen crypto currency from an API
     fetchCryptoInfo(cryptoName);
+    // Function that gets the news regarding the chosen currency from an API
     fetchNews(cryptoName);
+    // Function that retrieves the crypto coin value in USD of several days to make a chart with said info
     fetchTableData(cryptoName);
 }
 
-
-function test(event) {
-    event.preventDefault();
-
-    console.log("Clicked");
-    console.log($('#form-element').val());
-}
-
-//  $("#input-button").click(test);
+// Listens to the form button
 $("#input-button").click(getCryptoInfo);
 
-// buttonEl.addEventListener('click', getCryptoInfo);
 
 
 
