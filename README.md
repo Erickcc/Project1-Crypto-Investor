@@ -42,4 +42,4 @@ This project was developed using:
 
 ![Mock Up Crypto App](./assets/images/Captura1.JPG)
 
-Link to the page:
+Link to the page: https://erickcc.github.io/Project1-Crypto-Investor/
